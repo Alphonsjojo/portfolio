@@ -1,91 +1,216 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Alphons Jojo - Profile</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alphons Jojo | AI Engineer Intern</title>
+    <meta name="description"
+        content="Portfolio of Alphons Jojo, an AI and web development Enthusiast.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
-<body style="margin:0; font-family:Arial, sans-serif; background-color:#0d1117; color:#c9d1d9;">
+<body>
 
-    <!-- Top footer bar -->
-    <div style="background-color:#161b22; padding:10px; text-align:center; border-bottom:1px solid #30363d;">
-        <strong>Alphons Jojo</strong>
+    <!-- GitHub-Style Top Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Left Zone: Logo -->
+            <a href="#" class="nav-logo" aria-label="Homepage">
+                <img src="Aj.jpg" alt="Logo" width="32" height="32" style="border-radius: 50%;">
+                <span class="logo-text">alphonsjojo</span>
+            </a>
+
+            <!-- Right Zone: Navigation -->
+            <ul class="nav-links">
+                <li><a href="#" class="nav-link"><i class="far fa-eye"></i> Overview</a></li>
+                <li><a href="#projects" class="nav-link"><i class="fas fa-columns"></i> Projects</a></li>
+                <li><a href="#activity" class="nav-link"><i class="fas fa-chart-line"></i> Experience</a></li>
+                <li><a href="mailto:jojoalphons21@gmail.com" class="nav-link contact-btn">Contact</a></li>
+            </ul>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-btn" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- SIDEBAR (Profile Section) -->
+        <aside class="profile-sidebar">
+            <div class="profile-header">
+                <img src="Aj.jpg" alt="Alphons Jojo" class="avatar">
+                <h1 class="name">Alphons Jojo</h1>
+                <p class="tagline">AI & web development Enthusiast</p>
+            </div>
+
+
+
+            <div class="profile-actions">
+                <a href="mailto:jojoalphons21@gmail.com" class="btn btn-primary">Contact</a>
+                <a href="Alphons Jojo Resume 2025 Updated.pdf" class="btn btn-secondary" download>Download Resume</a>
+            </div>
+
+            <div class="profile-details">
+                <div class="detail-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Kerala, India</span>
+                </div>
+                <div class="detail-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:jojoalphons21@gmail.com">jojoalphons21@gmail.com</a>
+                </div>
+                <div class="detail-item">
+                    <i class="fab fa-github"></i>
+                    <a href="https://github.com/alphonsjojo" target="_blank">github.com/alphonsjojo</a>
+                </div>
+                <div class="detail-item">
+                    <i class="fab fa-linkedin"></i>
+                    <a href="https://www.linkedin.com/in/alphons-jojo/" target="_blank">linkedin.com/in/alphons-jojo</a>
+                </div>
+            </div>
+
+            <div class="profile-achievements">
+                <h3>Certifications</h3>
+                <div class="badges">
+                    <div class="badge" title="not yet">
+                        <i>Not yet</i> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-achievements" style="margin-top: 16px; border-top: none; padding-top: 0;">
+                <h3>Activities</h3>
+                <ul style="font-size: 13px; color: var(--text-secondary); padding-left: 0;">
+                    <li style="margin-bottom: 4px;">    </li>
+                    <li style="margin-bottom: 4px;">• 2nd Place – Astra 2026</li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+
+            <!-- SKILLS SECTION -->
+            <section id="skills" class="section">
+                <h2>Skills & Technologies</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Programming</h3>
+                        <div class="skill-pills">
+                            <span class="pill">C++</span>
+                            <span class="pill">HTML</span>
+                            <span class="pill">CSS</span>
+                            <span class="pill">SQL</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                         <h3>Tools & Cloud</h3>
+                        <div class="skill-pills">
+                            <span class="pill">Git</span>
+                            <span class="pill">GitHub</span>
+                            <span class="pill">Firebase</span>
+                            <span class="pill">Google Cloud</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PROJECTS SECTION -->
+            <section id="projects" class="section">
+                <div class="section-header">
+                    <h2>Projects</h2>
+                    <div class="filter-controls">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="ai">AI</button>
+                        <button class="filter-btn" data-filter="web">Web</button>
+                    </div>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card" data-category="web">
+                        <div class="card-header">
+                            <h3 class="project-title">
+                                <i class="fas fa-heartbeat"></i> online canteen
+                            </h3>
+                            <span class="project-private">Public</span>
+                        </div>
+                        <p class="project-desc">college canteen online food booking</p>
+                        <div class="project-meta">
+                            <span class="tech-stack"><span class="color-dot"
+                                    style="background-color: #3572A5;"></span>HTML</span>
+                            <span class="tech-stack"><span class="color-dot"
+                                    style="background-color: #89e051;"></span>CSS</span>
+                            <span class="tech-stack"><span class="color-dot"
+                                    style="background-color: #f1e05a;"></span>JavaScript</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card" data-category="web">
+                        <div class="card-header">
+                            <h3 class="project-title">
+                                <i class="fas fa-leaf"></i> EcoGrow
+                            </h3>
+                            <span class="project-private">Public</span>
+                        </div>
+                        <p class="project-desc">Greenhouse Environment Monitoring System</p>
+                        <div class="project-meta">
+                            <span class="tech-stack"><span class="color-dot"
+                                    style="background-color: #61dafb;"></span>React</span>
+                            <span class="tech-stack"><span class="color-dot"
+                                    style="background-color: #3572A5;"></span>Flask</span>
+                            <span class="tech-stack"><span class="color-dot"
+                                    style="background-color: #f1e05a;"></span>IoT/AI</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ACTIVITY / TIMELINE SECTION -->
+            <section id="activity" class="section">
+                <h2>Experience & Education</h2>
+                <div class="timeline">
+                    <!-- Experience -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                        </div>
+                    </div>
+
+                    <!-- Education -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="date">Oct 2025 – Present</span>
+                            <h4>BCA</h4>
+                            <p>St.Thomas college palai(Autonomous)<br>Department of Computer Applications
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FOOTER -->
+            <footer class="main-footer">
+                <div class="social-links">
+                    <a href="https://github.com/alphonsjojo"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/alphons-jojo/"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:jojoalphons21@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+                <p>&copy; 2026 Alphons Jojo. Built with values.</p>
+            </footer>
+
+        </main>
     </div>
 
-    <!-- Main layout -->
-    <table width="100%" cellpadding="20" cellspacing="0">
-        <tr>
-            <!-- Left side (photo + name + details + education + hobbies) -->
-            <td width="35%" valign="top" style="border-right:1px solid #30363d; text-align:center;">
-
-                <img src="Aj.jpg" alt="Alphons Jojo Photo"
-                     width="175" height="160"
-                     style="border-radius:50%; border:3px solid #30363d;">
-
-                <h2>Alphons Jojo</h2>
-                <p><strong>Student</strong></p>
-
-                <h3>About Me</h3>
-                <p>
-                    I am a student learning computer science and technology.
-                    I am passionate about programming and exploring new technologies.
-                </p>
-
-                <h3>Personal Details</h3>
-                <p>
-                    Name : Alphons Jojo<br>
-                    Role : Student<br>
-                    Country : India
-                </p>
-
-                <h3>Skills</h3>
-                <ul style="text-align:left; display:inline-block;">
-                    <li>C++ Programming</li>
-                    <li>Problem solving</li>
-                    <li>Basic Web Development</li>
-                    <li>MySQL</li>
-                </ul>
-
-                <h3>Education</h3>
-                <p>
-                    St. Thomas College, Palai (Autonomous).<br>
-                    Currently pursuing a degree in Computer Applications.
-                </p>
-
-                <h3>Hobbies</h3>
-                <ul style="text-align:left; display:inline-block;">
-                    <li>Learning new technologies</li>
-                    <li>Exploring computers and hardware</li>
-                    <li>Problem solving</li>
-                </ul>
-
-                <h3>Contact</h3>
-                <p>
-                    <a href="https://github.com/alphonsjojo" style="color:#58a6ff;">GitHub</a><br>
-                    <a href="https://www.linkedin.com/in/alphons-jojo/" style="color:#58a6ff;">LinkedIn</a><br>
-                    <a href="mailto:jojoalphons21@gmail.com" style="color:#58a6ff;">Email</a>
-                </p>
-
-            </td>
-
-            <!-- Right side (projects only) -->
-            <td width="65%" valign="top" style="font-size:18px;">
-
-                <h1 style="font-size:32px; margin-top:0;">Projects</h1>
-                <ul style="font-size:20px; line-height:1.6;">
-                    <li>college canteen online food booking</li>
-                    <li>Mini web pages using HTML</li>
-                    <li>EchoGrow(Greenhouse Environment Monitoring System)</li>
-                </ul>
-
-            </td>
-        </tr>
-    </table>
-    <!-- Bottom footer bar -->
-    <div style="background-color:#161b22; padding:10px; text-align:center; border-top:1px solid #30363d;">
-        &copy; 2026 Alphons Jojo.
-    </div>
-
+    <script src="script.js"></script>
 </body>
+
 </html>
-
-
